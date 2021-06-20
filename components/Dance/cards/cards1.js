@@ -16,11 +16,17 @@ function Cards1(props) {
             >
 
                 <Card.Body>
-                    <footer ><h1 className={styles.card_content}>{props.classes}</h1>
-                        <p className={styles.wishlist}>ADD TO WISHLIST {' '}<Icon.BookmarkFill className={styles.bookmark} /></p>
+                    <h1 className={styles.card_content}>{props.classes}</h1>
+                    <div className={styles.cart}>
+                        <div>
+                            <p className={styles.wishlist}>ADD TO WISHLIST
+                            </p>
+                        </div>
 
-                    </footer>
 
+                        <Icon.BookmarkFill className={styles.bookmark} />
+
+                    </div>
 
 
                 </Card.Body>
